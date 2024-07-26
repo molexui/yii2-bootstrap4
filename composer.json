@@ -1,15 +1,14 @@
 {
-    "name": "yiisoft/yii2-bootstrap4",
-    "description": "The Twitter Bootstrap extension for the Yii framework",
-    "keywords": ["yii2", "bootstrap", "bootstrap4"],
+    "name": "molexui/yii2-bootstrap4",
+    "description": "The Twitter Bootstrap extension for the Yii framework with Small Enhancement",
+    "keywords": ["yii2", "bootstrap", "bootstrap4", "molexui"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2-bootstrap4/issues",
-        "forum": "https://www.yiiframework.com/forum/",
-        "wiki": "https://www.yiiframework.com/wiki/",
-        "irc": "ircs://irc.libera.chat:6697/yii",
-        "source": "https://github.com/yiisoft/yii2-bootstrap4"
+        "issues": "https://github.com/molexui/yii2-bootstrap4/issues",
+        "forum": "https://github.com/molexui/yii2-bootstrap4/discussions",
+        "wiki": "https://github.com/molexui/yii2-bootstrap4/wiki",
+        "source": "https://github.com/molexui/yii2-bootstrap4"
     },
     "authors": [
         {
@@ -33,7 +32,12 @@
         {
             "name": "Simon Karlen",
             "email": "simi.albi@outlook.com"
+        },
+        {
+            "name": "Agus Suhartono",
+            "email": "agus.suhartono@gmail.com"
         }
+
     ],
     "require": {
         "yiisoft/yii2": "^2.0.43",
