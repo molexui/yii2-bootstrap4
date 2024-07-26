@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap4;
+namespace molexui\bootstrap4;
 
 use yii\helpers\ArrayHelper;
 
@@ -76,7 +76,9 @@ class ButtonGroup extends Widget
      */
     public function run()
     {
-        BootstrapAsset::register($this->getView());
+        if (!(isset(Yii::$app->params['bootstrap4Disable']) && Yii::$app->params['bootstrap4Disable'])) {
+            BootstrapAsset::register($this->getView());
+        }
         return Html::tag('div', $this->renderButtons(), $this->options);
     }
 

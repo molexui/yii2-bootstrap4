@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap4;
+namespace molexui\bootstrap4;
 
 /**
  * Button renders a bootstrap button.

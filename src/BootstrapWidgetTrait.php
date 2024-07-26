@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap4;
+namespace molexui\bootstrap4;
 
 use Yii;
 use yii\helpers\Json;
@@ -69,7 +69,9 @@ trait BootstrapWidgetTrait
     {
         $view = $this->getView();
 
-        BootstrapPluginAsset::register($view);
+        if (!(isset(Yii::$app->params['bootstrap4Disable']) && Yii::$app->params['bootstrap4Disable'])) {
+            BootstrapPluginAsset::register($view);
+        }
 
         $id = $this->options['id'];
 

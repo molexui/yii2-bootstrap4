@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap4;
+namespace molexui\bootstrap4;
 
 use Yii;
 use yii\helpers\ArrayHelper;
@@ -171,7 +171,10 @@ class NavBar extends Widget
         }
         $tag = ArrayHelper::remove($this->options, 'tag', 'nav');
         echo Html::endTag($tag);
-        BootstrapPluginAsset::register($this->getView());
+
+        if (!(isset(Yii::$app->params['bootstrap4Disable']) && Yii::$app->params['bootstrap4Disable'])) {
+            BootstrapPluginAsset::register($this->getView());
+        }
     }
 
     /**

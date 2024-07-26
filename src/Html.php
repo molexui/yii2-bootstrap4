@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap4;
+namespace molexui\bootstrap4;
 
 /**
  * Html is an enhanced version of [[\yii\helpers\Html]] helper class dedicated to the Bootstrap needs.

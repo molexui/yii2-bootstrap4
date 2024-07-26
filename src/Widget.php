@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap4;
+namespace molexui\bootstrap4;
 
 /**
  * \yii\bootstrap4\Widget is the base class for all bootstrap widgets.

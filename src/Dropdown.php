@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap4;
+namespace molexui\bootstrap4;
 
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
@@ -80,7 +80,12 @@ class Dropdown extends Widget
      */
     public function run()
     {
-        BootstrapPluginAsset::register($this->getView());
+        $view = $this->getView();
+
+        if (!(isset(Yii::$app->params['bootstrap4Disable']) && Yii::$app->params['bootstrap4Disable'])) {
+            BootstrapPluginAsset::register($view);
+        }
+        
         $this->registerClientEvents();
         return $this->renderItems($this->items, $this->options);
     }
