@@ -14,9 +14,9 @@ For license information check the [LICENSE](LICENSE.md)-file.
 
 Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-bootstrap4/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-bootstrap4)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-bootstrap4/downloads.png)](https://packagist.org/packages/yiisoft/yii2-bootstrap4)
-[![Build Status](https://github.com/yiisoft/yii2-bootstrap4/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-bootstrap4/actions)
+[![Latest Stable Version](https://poser.pugx.org/molexui/yii2-bootstrap4/v/stable.png)](https://packagist.org/packages/molexui/yii2-bootstrap4)
+[![Total Downloads](https://poser.pugx.org/molexui/yii2-bootstrap4/downloads.png)](https://packagist.org/packages/molexui/yii2-bootstrap4)
+[![Build Status](https://github.com/molexui/yii2-bootstrap4/workflows/build/badge.svg)](https://github.com/molexui/yii2-bootstrap4/actions)
 
 
 Installation
@@ -27,13 +27,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-php composer.phar require --prefer-dist yiisoft/yii2-bootstrap4
+php composer.phar require --prefer-dist molexui/yii2-bootstrap4
 ```
 
 or add
 
 ```
-"yiisoft/yii2-bootstrap4": "~2.0.6"
+"molexui/yii2-bootstrap4": "~2.0.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -45,5 +45,5 @@ For example, the following
 single line of code in a view file would render a Bootstrap Progress plugin:
 
 ```php
-<?= yii\bootstrap4\Progress::widget(['percent' => 60, 'label' => 'test']) ?>
+<?= molexui\bootstrap4\Progress::widget(['percent' => 60, 'label' => 'test']) ?>
 ```
